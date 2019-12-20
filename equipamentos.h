@@ -1,20 +1,19 @@
 #ifndef EQUIPAMENTOS_H_
 #define EQUIPAMENTOS_H_
 
-#include "headerGlobal.h"
+#include "header.h"
 
-#define TAM_EQUIPAMENTO 100
+#define TAM_STOCK 5
 
 typedef struct 
 {
     int id;
-    char tipo[20];
+    Tipo tipo;
     char marca[10];
     char modelo[10];
-    char dataAquisicao[11];
+    Data dataAquisicao;
+    Bool operacional;
+   
 
 }Equipamento;
-
-
-
 #endif
